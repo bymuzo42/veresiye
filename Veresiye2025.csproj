@@ -69,6 +69,10 @@
     <Reference Include="System.Data.SQLite.Linq, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.Linq.1.0.119.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=4015e0f7461e8ae5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -117,6 +121,14 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="UnifiedForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnifiedForm4.Designer.cs">
+      <DependentUpon>UnifiedForm4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmHelper.cs" />
+    <Compile Include="AlarmManager.cs" />
     <Compile Include="PasswordHasher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -134,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnifiedForm4.resx">
+      <DependentUpon>UnifiedForm4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCariEkle.resx">
       <DependentUpon>FormCariEkle.cs</DependentUpon>
